@@ -1,11 +1,11 @@
 import numpy as np
 import pygame
 
-from XO_Omar import WIDTH, HEIGHT
 
 ROWS=3
 COLUMNS=3
 WHITE =(255,255,255)
+BLACK = (0,0,0)
 WIDTH=600
 HEIGHT=600
 SIZE=(WIDTH,HEIGHT)
@@ -22,6 +22,12 @@ def is_board_full():
             if board[r][c]==0:
                 return False
     return True
+
+def draw_lines():
+    pygame.draw.line(window,BLACK,(200,0), (200, 600), 10)
+    pygame.draw.line(window, BLACK, (400, 0), (400, 600), 10)
+    pygame.draw.line(window, BLACK, (0,200), (600, 200), 10)
+    pygame.draw.line(window, BLACK, (0,400), (600, 400), 10)
 
 def is_winning_move(player):
     if player == 1:
@@ -53,9 +59,11 @@ pygame.init()
 window = pygame.display.set_mode(SIZE)
 pygame.display.set_caption("tic tac toe")
 window.fill(WHITE)
+draw_lines()
 pygame.display.update()
+pygame.time.wait(2000)
 
-
+"""
 while not game_over:
     if Turn % 2 ==0:
         #Player 1
@@ -83,3 +91,4 @@ while not game_over:
     print(board)
     if game_over==True:
         print("Game Over")
+"""
