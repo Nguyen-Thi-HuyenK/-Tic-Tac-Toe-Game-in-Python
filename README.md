@@ -7,4 +7,6 @@
 - Task 5: Use the events of Pygame to listen for the player's mouse click
 - Task 6: Animate the game
 
-![image](https://github.com/user-attachments/assets/f2df60f3-3a19-4458-924e-d5cb95b611fd)
+![image](https://github.com/user-attachments/assets/5660b6e1-2efa-49e3-9f5e-b1780a49964c)
+
+![image](https://github.com/user-attachments/assets/f27e25a7-4699-4372-9659-b5916f0f361b)
