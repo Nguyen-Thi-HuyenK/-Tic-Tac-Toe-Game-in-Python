@@ -38,9 +38,9 @@ def draw_board():
     for c in range(COLUMNS):
         for r in range(ROWS):
             if board[r][c] == 1:
-                window.blit(CIRCLE, ((c * 200) + 50, (r * 200) + 50))
+                window.blit(CIRCLE, ((c * 200) + 100 - CIRCLE.get_width() // 2, (r * 200) + 100 - CIRCLE.get_height() // 2))
             elif board[r][c] == 2:
-                window.blit(CROSS, ((c * 200) + 50, (r * 200) + 50))  # FIXED CROSS IMAGE!
+                window.blit(CROSS, ((c * 200) + 100 - CROSS.get_width() // 2, (r * 200) + 100 - CROSS.get_height() // 2))
     pygame.display.update()
 
 def draw_lines():
